@@ -1,4 +1,4 @@
-#AppoMobi.Xamarin.ExternalPurchaseLink
+# AppoMobi.Xamarin.ExternalPurchaseLink
 
 Xamarin bindings to implement Apple ExternalPurchaseLink permission.
 
