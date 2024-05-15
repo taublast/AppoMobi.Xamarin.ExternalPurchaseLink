@@ -10,6 +10,12 @@ public class SwiftFrameworkProxy : NSObject {
         return 1.1
     }
     
+    //iOS 15
+    @objc public static func canMakePayments() -> Bool {
+        let result = AppStore.canMakePayments
+        return result
+    }
+    
     // iOS 15.0
     @objc public static func getStorefrontId(completion: @escaping (String) -> Void) {
         Task {
@@ -32,13 +38,6 @@ public class SwiftFrameworkProxy : NSObject {
     }
 
 
-    //iOS 15
-    @objc public static func canMakePayments() -> Bool {
-        let result = AppStore.canMakePayments
-        return result
-    }
-
-    
     // iOS 15.4
     @objc public static func checkCanOpenExternalPurchaseLink(completion: @escaping (Bool) -> Void) {
         Task {

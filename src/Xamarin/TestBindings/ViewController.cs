@@ -22,8 +22,14 @@ namespace TestBindings
 
             Console.WriteLine($"CanMakePayments: {SwiftFrameworkProxy.CanMakePayments}");
 
+      
             BeginInvokeOnMainThread (() =>
             {
+
+                SwiftFrameworkProxy.CheckCanOpenExternalPurchaseLinkWithCompletion((result) =>
+                {
+                    Console.WriteLine($"Can Open Link {result}");
+                });
 
                 SwiftFrameworkProxy.OpenExternalLinkWithCompletionHandler((error) =>
                 {
@@ -37,6 +43,10 @@ namespace TestBindings
                     }
                 });
 
+                //SwiftFrameworkProxy.GetStorefrontCountryCodeWithCompletion((code) =>
+                //{
+                //    Console.WriteLine($"Country Code {code}");
+                //});
 
             });
         }

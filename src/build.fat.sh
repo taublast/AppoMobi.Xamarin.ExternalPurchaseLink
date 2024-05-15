@@ -40,7 +40,8 @@ sharpie bind --sdk=iphoneos$IOS_SDK_VERSION --output="$SWIFT_OUTPUT_PATH/Xamarin
 echo "STEP 9: Replace existing metadata with the updated"
 cp -Rf "$SWIFT_OUTPUT_PATH/XamarinApiDef/." "$XAMARIN_BINDING_PATH/"
 
-echo "STEP 10: Replace referenced native framework with new fat"
-cp -R "$SWIFT_BUILD_PATH/Release-fat" "$XAMARIN_BINDING_PATH/Framework"
+echo "STEP 10: Replace referenced native framework at $XAMARIN_BINDING_PATH/Framework"
+cp -R "$SWIFT_BUILD_PATH/Release-fat/"* "$XAMARIN_BINDING_PATH/Framework/"
+
 
 echo "Operations completed!"

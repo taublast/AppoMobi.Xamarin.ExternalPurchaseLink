@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/SwiftFrameworkProxy-Swift.h</key>
 		<data>
-		2s8mOZvq3YQ0k+vWKDNB1x3bTno=
+		ZxTCSpDZvhriMquRWr7qA2BYpdA=
 		</data>
 		<key>Headers/SwiftFrameworkProxy.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/SwiftFrameworkProxy.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		ZcDFzoAUpE1xCmae74C1qkVFPWg=
+		agdh7ebjNLKlja/gETs+a/BJxto=
 		</data>
 		<key>Modules/SwiftFrameworkProxy.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/SwiftFrameworkProxy.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		I8hWR/3W1io9eY7H+I0CD3JRoBQ=
+		TYjCmJyFOuzb/fv6DLgMDmr33gk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,7 +43,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+/9OttBpDBbtCqSC3YyCpfNT29GQNuygxgiua7AaLvk=
+			goFkfGztgS47KdqrRAM+bXUemm8CzLHO0nt0oz2NFxU=
 			</data>
 		</dict>
 		<key>Headers/SwiftFrameworkProxy.h</key>
@@ -57,7 +57,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hIfWlvI3F0RDoe+XavLuaZCXlZSOXq7/C4l1+uSzw30=
+			Fi2NxSHLLBjOXaeWuEqL/JPz6H5tOETdsBLCxskbFPc=
 			</data>
 		</dict>
 		<key>Modules/SwiftFrameworkProxy.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -78,7 +78,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fF5ah+spgOTu7j48dHoeae85LvvTROcP8SaMMQakppw=
+			Y3+9q7y1d3k/deuVj8iwKaT+G7WYi1fm1vS8NJFq8FM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
