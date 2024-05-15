@@ -298,12 +298,17 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class NSString;
+@class UIWindowScene;
 
 SWIFT_CLASS_NAMED("SwiftFrameworkProxy")
 @interface SwiftFrameworkProxy : NSObject
-+ (NSInteger)BindingsVersion SWIFT_WARN_UNUSED_RESULT;
++ (double)BindingsVersion SWIFT_WARN_UNUSED_RESULT;
++ (void)getStorefrontIdWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
++ (void)getStorefrontCountryCodeWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
++ (void)showManageSubscriptionsIn:(UIWindowScene * _Nonnull)scene completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
 + (BOOL)canMakePayments SWIFT_WARN_UNUSED_RESULT;
-+ (void)canOpenExternalPurchaseLinkWithCompletion:(void (^ _Nonnull)(BOOL))completion;
++ (void)checkCanOpenExternalPurchaseLinkWithCompletion:(void (^ _Nonnull)(BOOL))completion;
 + (void)openExternalLinkWithCompletionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

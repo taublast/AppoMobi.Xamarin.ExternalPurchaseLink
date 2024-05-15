@@ -6,10 +6,32 @@ import StoreKit
 @objc(SwiftFrameworkProxy)
 public class SwiftFrameworkProxy : NSObject {
 
-    @objc public static func BindingsVersion() -> Int {
-            return 1
+    @objc public static func BindingsVersion() -> Double {
+        return 1.1
     }
-        
+    
+    // iOS 15.0
+    @objc public static func getStorefrontId(completion: @escaping (String) -> Void) {
+        Task {
+            let result = await Storefront.current?.id
+            completion(result ?? "")
+        }
+    }
+    
+    // iOS 15.0
+    @objc public static func getStorefrontCountryCode(completion: @escaping (String) -> Void) {
+        Task {
+            let result = await Storefront.current?.countryCode
+            completion(result ?? "")
+        }
+    }
+
+
+    @objc public static func showManageSubscriptions(in scene: UIWindowScene) async throws {
+        try await AppStore.showManageSubscriptions(in: scene)
+    }
+
+
     //iOS 15
     @objc public static func canMakePayments() -> Bool {
         let result = AppStore.canMakePayments
@@ -18,14 +40,12 @@ public class SwiftFrameworkProxy : NSObject {
 
     
     // iOS 15.4
-    @objc public static func canOpenExternalPurchaseLink(completion: @escaping (Bool) -> Void) {
+    @objc public static func checkCanOpenExternalPurchaseLink(completion: @escaping (Bool) -> Void) {
         Task {
             let result = await ExternalPurchaseLink.canOpen
-            print("ExternalPurchaseLink.canOpen: \(result)")
             completion(result)
         }
     }
-
 
     //iOS 15.4
     @objc public static func openExternalLink() async throws {

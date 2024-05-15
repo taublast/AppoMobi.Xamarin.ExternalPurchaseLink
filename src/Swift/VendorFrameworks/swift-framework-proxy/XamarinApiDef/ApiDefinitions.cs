@@ -1,5 +1,6 @@
 using System;
 using Foundation;
+using UIKit;
 
 namespace Binding
 {
@@ -7,11 +8,26 @@ namespace Binding
 	[BaseType (typeof(NSObject))]
 	interface SwiftFrameworkProxy
 	{
-		// +(NSInteger)BindingsVersion __attribute__((warn_unused_result("")));
+		// +(double)BindingsVersion __attribute__((warn_unused_result("")));
 		[Static]
 		[Export ("BindingsVersion")]
 		[Verify (MethodToProperty)]
-		nint BindingsVersion { get; }
+		double BindingsVersion { get; }
+
+		// +(void)getStorefrontIdWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+		[Static]
+		[Export ("getStorefrontIdWithCompletion:")]
+		void GetStorefrontIdWithCompletion (Action<NSString> completion);
+
+		// +(void)getStorefrontCountryCodeWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+		[Static]
+		[Export ("getStorefrontCountryCodeWithCompletion:")]
+		void GetStorefrontCountryCodeWithCompletion (Action<NSString> completion);
+
+		// +(void)showManageSubscriptionsIn:(UIWindowScene * _Nonnull)scene completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
+		[Static]
+		[Export ("showManageSubscriptionsIn:completionHandler:")]
+		void ShowManageSubscriptionsIn (UIWindowScene scene, Action<NSError> completionHandler);
 
 		// +(BOOL)canMakePayments __attribute__((warn_unused_result("")));
 		[Static]
@@ -19,10 +35,10 @@ namespace Binding
 		[Verify (MethodToProperty)]
 		bool CanMakePayments { get; }
 
-		// +(void)canOpenExternalPurchaseLinkWithCompletion:(void (^ _Nonnull)(BOOL))completion;
+		// +(void)checkCanOpenExternalPurchaseLinkWithCompletion:(void (^ _Nonnull)(BOOL))completion;
 		[Static]
-		[Export ("canOpenExternalPurchaseLinkWithCompletion:")]
-		void CanOpenExternalPurchaseLinkWithCompletion (Action<bool> completion);
+		[Export ("checkCanOpenExternalPurchaseLinkWithCompletion:")]
+		void CheckCanOpenExternalPurchaseLinkWithCompletion (Action<bool> completion);
 
 		// +(void)openExternalLinkWithCompletionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
 		[Static]
