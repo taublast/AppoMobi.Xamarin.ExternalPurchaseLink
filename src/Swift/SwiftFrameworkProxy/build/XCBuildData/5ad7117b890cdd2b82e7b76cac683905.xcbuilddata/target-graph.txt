@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-Target 'SwiftFrameworkProxy' in project 'SwiftFrameworkProxy' (no dependencies)

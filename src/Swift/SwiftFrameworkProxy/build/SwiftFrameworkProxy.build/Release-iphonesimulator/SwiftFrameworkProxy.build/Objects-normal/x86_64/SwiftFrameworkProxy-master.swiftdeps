@@ -1,7 +1,0 @@
-version: "Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)"
-options: "73f3b657b35b26a6c54217c2538d9c59445c9fe2637bd81ddc35496adaab6b9f"
-build_start_time: [1715766340, 65349000]
-build_end_time: [1715766340, 512205000]
-inputs:
-  ? "/Users/nickyboom/Projects/AppoMobi.Xamarin.ExternalPurchaseLink/src/Swift/SwiftFrameworkProxy/SwiftFrameworkProxy/SwiftFrameworkProxy.swift"
-  : [1715763740, 187541524]
