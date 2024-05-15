@@ -21,6 +21,24 @@ namespace TestBindings
             Console.WriteLine($"Bindings Version: {SwiftFrameworkProxy.BindingsVersion}");
 
             Console.WriteLine($"CanMakePayments: {SwiftFrameworkProxy.CanMakePayments}");
+
+            BeginInvokeOnMainThread (() =>
+            {
+
+                SwiftFrameworkProxy.OpenExternalLinkWithCompletionHandler((error) =>
+                {
+                    if (error == null)
+                    {
+                        Console.WriteLine($"OpenLink no errors");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"OpenLink error {error.Code} {error.Description}");
+                    }
+                });
+
+
+            });
         }
 
         public override void DidReceiveMemoryWarning ()
