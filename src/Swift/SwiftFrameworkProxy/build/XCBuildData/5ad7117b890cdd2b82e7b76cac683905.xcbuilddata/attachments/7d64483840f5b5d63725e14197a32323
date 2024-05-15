@@ -1,0 +1,15 @@
+{
+  "" : {
+    "const-values" : "/Users/nickyboom/Projects/AppoMobi.Xamarin.ExternalPurchaseLink/src/Swift/SwiftFrameworkProxy/build/SwiftFrameworkProxy.build/Release-iphoneos/SwiftFrameworkProxy.build/Objects-normal/arm64/SwiftFrameworkProxy-master.swiftconstvalues",
+    "dependencies" : "/Users/nickyboom/Projects/AppoMobi.Xamarin.ExternalPurchaseLink/src/Swift/SwiftFrameworkProxy/build/SwiftFrameworkProxy.build/Release-iphoneos/SwiftFrameworkProxy.build/Objects-normal/arm64/SwiftFrameworkProxy-master.d",
+    "diagnostics" : "/Users/nickyboom/Projects/AppoMobi.Xamarin.ExternalPurchaseLink/src/Swift/SwiftFrameworkProxy/build/SwiftFrameworkProxy.build/Release-iphoneos/SwiftFrameworkProxy.build/Objects-normal/arm64/SwiftFrameworkProxy-master.dia",
+    "emit-module-dependencies" : "/Users/nickyboom/Projects/AppoMobi.Xamarin.ExternalPurchaseLink/src/Swift/SwiftFrameworkProxy/build/SwiftFrameworkProxy.build/Release-iphoneos/SwiftFrameworkProxy.build/Objects-normal/arm64/SwiftFrameworkProxy-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/nickyboom/Projects/AppoMobi.Xamarin.ExternalPurchaseLink/src/Swift/SwiftFrameworkProxy/build/SwiftFrameworkProxy.build/Release-iphoneos/SwiftFrameworkProxy.build/Objects-normal/arm64/SwiftFrameworkProxy-master-emit-module.dia",
+    "swift-dependencies" : "/Users/nickyboom/Projects/AppoMobi.Xamarin.ExternalPurchaseLink/src/Swift/SwiftFrameworkProxy/build/SwiftFrameworkProxy.build/Release-iphoneos/SwiftFrameworkProxy.build/Objects-normal/arm64/SwiftFrameworkProxy-master.swiftdeps"
+  },
+  "/Users/nickyboom/Projects/AppoMobi.Xamarin.ExternalPurchaseLink/src/Swift/SwiftFrameworkProxy/SwiftFrameworkProxy/SwiftFrameworkProxy.swift" : {
+    "index-unit-output-path" : "/SwiftFrameworkProxy.build/Release-iphoneos/SwiftFrameworkProxy.build/Objects-normal/arm64/SwiftFrameworkProxy.o",
+    "llvm-bc" : "/Users/nickyboom/Projects/AppoMobi.Xamarin.ExternalPurchaseLink/src/Swift/SwiftFrameworkProxy/build/SwiftFrameworkProxy.build/Release-iphoneos/SwiftFrameworkProxy.build/Objects-normal/arm64/SwiftFrameworkProxy.bc",
+    "object" : "/Users/nickyboom/Projects/AppoMobi.Xamarin.ExternalPurchaseLink/src/Swift/SwiftFrameworkProxy/build/SwiftFrameworkProxy.build/Release-iphoneos/SwiftFrameworkProxy.build/Objects-normal/arm64/SwiftFrameworkProxy.o"
+  }
+}

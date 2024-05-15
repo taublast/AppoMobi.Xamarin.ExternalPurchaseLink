@@ -1,0 +1,10 @@
+framework module SwiftFrameworkProxy {
+  umbrella header "SwiftFrameworkProxy.h"
+  export *
+
+  module * { export * }
+}
+
+module SwiftFrameworkProxy.__Swift {
+  exclude header "SwiftFrameworkProxy-Swift.h"
+}
