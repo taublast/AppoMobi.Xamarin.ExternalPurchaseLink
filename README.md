@@ -8,7 +8,7 @@ Left project structure generic to be re-used as template for similar projects.
 
 These are pure bindings without a wrapper. You could, for example, consume them like this:
 
-https://gist.github.com/taublast/3108c67bab654f5790c5916f14e61bc4
+<script src="https://gist.github.com/taublast/3108c67bab654f5790c5916f14e61bc4.js"></script>
 
 ## Source Code
 
