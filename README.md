@@ -1,10 +1,10 @@
 # AppoMobi.Xamarin.ExternalPurchaseLink
 
-Xamarin.iOS bindings to implement Apple StoreKit2 ` com.apple.developer.storekit.external-purchase-link` entitlement with [ExternalPurchaseLink](https://developer.apple.com/documentation/storekit/externalpurchaselink?language=objc) functionality.
+Xamarin.iOS bindings to implement Apple new StoreKit ` com.apple.developer.storekit.external-purchase-link` entitlement with [ExternalPurchaseLink](https://developer.apple.com/documentation/storekit/externalpurchaselink?language=objc) functionality.
 
-Could reference Xamarin project manually in your iOS app, or install nuget.
+Could reference Xamarin project manually in your iOS app, or install nuget. You need iOS 15.4 as the minimum deployment level.
 
-Left project structure generic to be re-used as template for similar projects.
+Left project structure generic to be re-used as a template for similar projects.
 
 These are pure bindings without a wrapper. You could, for example, consume them like this:
 
