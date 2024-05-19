@@ -1,10 +1,14 @@
 # AppoMobi.Xamarin.ExternalPurchaseLink
 
-Xamarin bindings to implement Apple ExternalPurchaseLink permission.
+Xamarin bindings to implement Apple StoreKit2 ` com.apple.developer.storekit.external-purchase-link` entitlement with [ExternalPurchaseLink](https://developer.apple.com/documentation/storekit/externalpurchaselink?language=objc) functionality.
+
+Can reference Xamarin project manually in your iOS app, or install nuget.
+
+Left project structure generic to be re-used as template for similar projects.
 
 ## Source Code
 
-We have 2 parts:
+2 parts:
 
 ### Native Wrapper
 
@@ -16,9 +20,3 @@ To edit on Mac:
 ### Xamarin iOS Bindings
 
 The framework that came from the script is going to be in the `Framework` folder, and `ApiDefinitions.cs` came from native script too.
-
-Can reference this project manually in your iOS app, if you install the nuget `Xamarin.iOS.SwiftRuntimeSupport` it would auto-reference the native framework for you, otherwise, you would need to add it manually to Native References.
-
-## Nuget Package
-
-todo

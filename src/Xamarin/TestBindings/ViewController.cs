@@ -9,21 +9,21 @@ namespace TestBindings
     {
         private SwiftFrameworkProxy _proxy;
 
-        public ViewController (IntPtr handle) : base (handle)
+        public ViewController(IntPtr handle) : base(handle)
         {
             _proxy = new SwiftFrameworkProxy();
         }
 
-        public override void ViewDidLoad ()
+        public override void ViewDidLoad()
         {
-            base.ViewDidLoad ();
+            base.ViewDidLoad();
 
             Console.WriteLine($"Bindings Version: {SwiftFrameworkProxy.BindingsVersion}");
 
             Console.WriteLine($"CanMakePayments: {SwiftFrameworkProxy.CanMakePayments}");
 
-      
-            BeginInvokeOnMainThread (() =>
+
+            BeginInvokeOnMainThread(() =>
             {
 
                 SwiftFrameworkProxy.CheckCanOpenExternalPurchaseLinkWithCompletion((result) =>
@@ -31,29 +31,30 @@ namespace TestBindings
                     Console.WriteLine($"Can Open Link {result}");
                 });
 
-                SwiftFrameworkProxy.OpenExternalLinkWithCompletionHandler((error) =>
-                {
-                    if (error == null)
-                    {
-                        Console.WriteLine($"OpenLink no errors");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"OpenLink error {error.Code} {error.Description}");
-                    }
-                });
-
-                //SwiftFrameworkProxy.GetStorefrontCountryCodeWithCompletion((code) =>
+                //will crash on simulator
+                //SwiftFrameworkProxy.OpenExternalLinkWithCompletionHandler((error) =>
                 //{
-                //    Console.WriteLine($"Country Code {code}");
+                //    if (error == null)
+                //    {
+                //        Console.WriteLine($"OpenLink no errors");
+                //    }
+                //    else
+                //    {
+                //        Console.WriteLine($"OpenLink error {error.Code} {error.Description}");
+                //    }
                 //});
+
+                SwiftFrameworkProxy.GetStorefrontCountryCodeWithCompletion((code) =>
+                {
+                    Console.WriteLine($"Country Code {code}");
+                });
 
             });
         }
 
-        public override void DidReceiveMemoryWarning ()
+        public override void DidReceiveMemoryWarning()
         {
-            base.DidReceiveMemoryWarning ();
+            base.DidReceiveMemoryWarning();
             // Release any cached data, images, etc that aren't in use.
         }
     }

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  
+  <metadata>
+    <id>AppoMobi.Xamarin.ExternalPurchaseLink</id>
+    <version>1.0.4.5</version>
+    <owners>Nick Kovalsky aka AppoMobi</owners>
+    <authors>Nick Kovalsky aka AppoMobi</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <title>AppoMobi.Xamarin.ExternalPurchaseLink</title>
+    <description>Xamarin iOS bindings for Apple StoreKit ExternalPurchaseLink functionality</description>
+    <tags>xamarin ios ExternalPurchaseLink storekit storekit2</tags>
+    <copyright>(c) AppoMobi, 2024 - present day</copyright>
+    <repository type="git" url="https://github.com/taublast/AppoMobi.Xamarin.ExternalPurchaseLink"/>
+  
+  <dependencies>
+
+    <group targetFramework="netstandard2.0">
+      <!--<dependency id="Xamarin.Forms" version="5.0.0.2612"/>-->
+    </group>
+
+    <group targetFramework="Xamarin.iOS10">
+      <!--<dependency id="Xamarin.Forms" version="5.0.0.2612"/>-->
+    </group>
+
+  </dependencies>
+  </metadata>
+  
+  <files>
+       
+    <!-- ios -->
+    <file src="../src/Xamarin/SwiftFrameworkProxy.Binding/bin/Release/SwiftFrameworkProxy.Binding.dll" target="lib/Xamarin.iOS10" />
+    <file src="../src/Xamarin/SwiftFrameworkProxy.Binding/Framework/SwiftFrameworkProxy.framework/**" target="runtimes/SwiftFrameworkProxy.framework" />
+    <file src="package.targets" target="build" />
+    
+  </files>
+</package>
